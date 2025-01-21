@@ -21,13 +21,22 @@
 .nevy{
      color: rgba(93, 88, 239, 1);
 }
+.btn-black{
+    font-weight: 700px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: black;
+    padding: 10px 47px;
+    border: none;
+    border-radius: 12px;
+}
 /* navbar */
 .navbar{
     justify-content: space-between;
     align-items: center;
     
 }
-.navbar, .banner{
+.navbar,.banner{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -54,6 +63,22 @@
     border: none;
     border-radius: 8px;
     
+}
+/* banner */
+.banner{
+    align-items: center;
+}
+.banner-container{
+    margin-right: 50px;
+}
+.banner-tittle{
+    font-weight: 700px;
+    font-size: 3.5rem;
+
+}
+.banner-description{
+    font-size: 1.25rem;
+    padding: 24px 0px;
 }
 /* responsive section */
 @media screen and (max-width: 576px){

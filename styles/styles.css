@@ -1,27 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 .quicksand-regular {
-  font-family: "Quicksand", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
+
 /* shard style */
-.display-flex{
+.display-flex {
     display: flex;
 }
-.orange{
-    color:  rgba(254, 163, 1, 1);
+
+.orange {
+    color: rgba(254, 163, 1, 1);
 }
-.sky-blue{
+
+.sky-blue {
     color: rgba(1, 172, 253, 1);
 }
-.sky-light{
+
+.sky-light {
     color: rgba(5, 212, 223, 1);
 }
-.nevy{
-     color: rgba(93, 88, 239, 1);
+
+.nevy {
+    color: rgba(93, 88, 239, 1);
 }
-.btn-black{
+
+.btn-black {
     font-weight: 700px;
     font-size: 1.25rem;
     color: white;
@@ -30,31 +37,38 @@
     border: none;
     border-radius: 12px;
 }
+
 /* navbar */
-.navbar{
+.navbar {
     justify-content: space-between;
     align-items: center;
-    
+
 }
-.navbar,.banner{
+
+.navbar,
+.banner,
+.main {
     max-width: 1440px;
     margin: 0 auto;
 }
-.nav-tittle{
+
+.nav-tittle {
     font-weight: 700px;
     font-size: 1.4rem;
 }
-.nav-content{
-    
-}
-.nav-item{
+
+.nav-content {}
+
+.nav-item {
     list-style: none;
     margin-right: 30px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
 }
-.btn-primary{
+
+.btn-primary {
     font-weight: 600;
     font-size: 1.25rem;
     color: white;
@@ -62,34 +76,160 @@
     padding: 10px 60px;
     border: none;
     border-radius: 8px;
-    
+
 }
+
 /* banner */
-.banner{
+.banner {
     align-items: center;
+    justify-content: space-between;
 }
-.banner-container{
-    margin-right: 50px;
+
+.banner-container {
+    width: 640px;
+
 }
-.banner-tittle{
+
+.banner-tittle {
     font-weight: 700px;
     font-size: 3.5rem;
 
 }
-.banner-description{
+
+.banner-description {
     font-size: 1.25rem;
     padding: 24px 0px;
 }
+
+.banner-img {
+    width: 468.61px;
+}
+/* standerd */
+.fects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 80px;
+   
+}
+.fect-card{
+    border-radius: 18px;
+    box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) ;
+    width: 367.8px;
+    height: 476.78px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fect-tittle{
+    font-weight: 700px;
+    font-size: 1.5rem;
+}
+.fect-description{
+    font-weight: 500px;
+    font-size: 1rem;
+}
+.fect-btn{
+    font-weight: 700px;
+    font-size: 1rem;
+    margin-top: 38px;
+}
+.section-tittle{
+    font-weight: 700px;
+    font-size: 3rem;
+    text-align: center;
+}
+.sect{
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    margin-top: 80px;
+}
+.nav-button{
+    width: 60px;
+    height: 60px;
+    margin: 0px 5px;
+    background-color:rgba(254, 163, 1, 1) ;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Our Stories */
+.container{
+    text-align: center;
+}
+.box{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+.box-side{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.box-full {
+   height: 630.52px;
+   width: 540.27px;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+   border: none;
+   border-radius: 16px;
+   overflow: hidden;
+}
+.box-1, .box-2, .box-3, .box-4{
+    width: 290.69px;
+    height: 301.61px;
+    margin-left: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.view-all{
+    margin: 60px auto;
+}
 /* responsive section */
-@media screen and (max-width: 576px){
-     .btn-primary, 
-     .nav-links,
-     .nav-tittle {
+@media screen and (max-width: 576px) {
+
+    .btn-primary,
+    .nav-links,
+    .nav-tittle,
+    .button-container,
+    .box-full {
         visibility: hidden;
-     }
-    .navbar{
-        border: 1px solid  rgba(254, 163, 1, 1);
-        max-width: 390px;
-        
-    } 
+    }
+
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-img {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .banner-container {
+        width: 100%;
+        text-align: center;
+    }
+    .fects-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+   .box-side{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px auto;
+   }
+   
 }

@@ -109,9 +109,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-top: 80px;
+    
    
 }
 .fect-card{
+    
     border-radius: 18px;
     box-shadow: 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05) ;
     width: 367.8px;
@@ -139,6 +141,7 @@
     text-align: center;
 }
 .sect{
+    text-align: center;
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
     padding-top: 60px;
@@ -166,7 +169,7 @@
 }
 /* Our Stories */
 .container{
-    text-align: center;
+    /* text-align: center; */
 }
 .box{
     margin-top: 80px;
@@ -194,9 +197,60 @@
     border-radius: 16px;
     overflow: hidden;
 }
+.box-tittle{
+    padding: 23px 54px 33px 37px;
+    width: 700px;
+    font-size: 1rem;
+}
+.box-tittle-full{
+    padding: 58px 38px 47px 38px;
+    font-weight: 700px;
+    font-size: 1.5rem;
+}
+.box-description-full{
+    padding: 0px 68px 30px 38px;
+    font-weight: 500px;
+    font-size: 1rem;
+    color: #666666;
+}
 .view-all{
     margin: 60px auto;
 }
+/* footer */
+footer{
+    max-width: 1920px;
+    background-color: #01ACFD;
+    padding: 123px 228px 174px 140px;
+    gap: 150px;
+}
+.footer-column{
+    width: 50%;
+}
+.footer-tittle-one{
+    font-weight: 700px;
+    font-size: 2.2rem;
+    color: white;
+}
+.footer-description-one{
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-tittle-two{
+    color: white;
+    font-weight: 700px;
+    font-size: 1.30rem;
+}
+.footer-description-two{
+    font-weight: 500px;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 1);
+}
+.footer-tittle-three{
+    color: white;
+    font-weight: 700px;
+    font-size: 1.30rem;
+}
+
 /* responsive section */
 @media screen and (max-width: 576px) {
 
@@ -232,4 +286,7 @@
     margin: 0px auto;
    }
    
+   footer{
+    flex-direction: column;
+   }
 }
